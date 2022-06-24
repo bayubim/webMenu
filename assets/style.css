@@ -1,9 +1,13 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+html {
+    scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: black;
     color: white;
@@ -17,24 +21,28 @@ nav {
     display:flex ;
     background-color: black;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     position: fixed;
 }
 
 nav h1 {
+    margin-left: 60px;
     font-size: 36px;
 }
+
+nav ul {
+    margin-right: 60px;
+}
+
 nav ul li {
     display: inline-block;
-    padding: 10px auto;
 }
 nav ul li a {
     text-decoration: none;
     font-size: 16px;
     color: white;
-
+    padding: 50px;
 }
-
 
 .hero {
     width: 100%;
