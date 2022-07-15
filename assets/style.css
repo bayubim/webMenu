@@ -5,18 +5,22 @@
     box-sizing: border-box;
 }
 
+html{
+   scroll-behavior: smooth;
+}
+
 body {
-    background-color: black;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: 'Rock Salt', cursive;
 }
 
 
 nav {
+    color: white;
     height: 60px;
     width: 100%;
     display:flex ;
-    background-color: black;
+    background:url(images/nav-bg.jpg);
     align-items: center;
     justify-content: space-between;
     position: fixed;
@@ -47,18 +51,23 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to top, black, rgba(0, 0, 0, 0)),
-                url(images/jumbotron.jpg);
+    background: url(images/jumbotron.jpg);
+    background-position: center;
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment: scrool;
 }
 
 .hero h1 {
+    color: white;
     border-bottom: 5px solid white;
     font-weight: bold;
 }
 
-article {
+main {
+    text-align: center;
+}
+
+article .list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -70,14 +79,33 @@ article div {
     margin-top: 5px;
 }
 
-article div img{
+article div img {
     width: 100%;
     height: 100%;
 }
-
-main h1 {
-    text-align: center;
+aside {
+    background-color: rgb(150, 150, 150);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 20px;
+    width: 22%;
+    padding-top: 10px;
+    height: 400px;
+    margin: auto;
 }
+
+aside img {
+    border-radius: 20px 20px 0 0;
+    width: 90%;
+    height: 60%;
+}
+
+.detail h1, p{
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
 
 
 
