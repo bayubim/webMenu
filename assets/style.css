@@ -10,7 +10,9 @@ html{
 }
 
 body {
-    color: rgb(0, 0, 0);
+
+    color: rgb(255, 255, 255);
+    background-color: #2E2F33;
     font-family: 'Rock Salt', cursive;
 }
 
@@ -67,6 +69,13 @@ main {
     text-align: center;
 }
 
+article {
+    padding-top: 50px;
+}
+article h1{
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
 article .list {
     display: flex;
     flex-wrap: wrap;
@@ -83,27 +92,24 @@ article div img {
     width: 100%;
     height: 100%;
 }
+
 aside {
-    background-color: rgb(150, 150, 150);
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 20px;
-    width: 22%;
-    padding-top: 10px;
-    height: 400px;
-    margin: auto;
+    background-color: rgb(221, 49, 49);
+    margin-top: 50px;
+    padding-bottom: 5px;
 }
 
 aside img {
     border-radius: 20px 20px 0 0;
-    width: 90%;
-    height: 60%;
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
 }
 
-.detail h1, p{
-    margin-top: 10px;
-    font-size: 16px;
-    font-family: sans-serif;
+.detail {
+    background-color: aliceblue;
+    
+    margin-bottom: 100px;
 }
 
 
